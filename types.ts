@@ -8,6 +8,8 @@ export interface Project {
   image: string;
   featured?: boolean;
   link?: string;
+  liveUrl?: string;
+  githubUrl?: string;
 }
 
 export interface Skill {

@@ -21,10 +21,37 @@ export const PROJECTS: Project[] = [
     date: "2025",
     description: "A strategic puzzle game where players 'Divide with the numbers to solve the rows and columns.' Features a 'Keep' slot for planning, a limited 'Trash' mechanic (x10) for risk management, and a cute cat mascot. Built with Phaser 3, it uses cascading logic to merge numbers and clear the grid.",
     tech: ["JavaScript (ES6)", "Phaser 3", "HTML5", "CSS3", "Algorithms"],
-    image: "just-divide.png",
-    featured: true
+    image: "./just-divide.png",
+    featured: true,
+    liveUrl: "https://femina-assignment-azure.vercel.app/",
+    githubUrl: "https://github.com/Femina-2720/Game_Assignment"
   }
 ];
+
+export const ASSIGNMENT_NOTE = {
+  title: "📝 Note to the Reviewer",
+  content: "I am submitting this assignment in the midst of my semester exams. Additionally, due to severe network instability in my area over the last 24 hours, I faced challenges downloading heavy assets or finding exact font matches. However, I have prioritized the core engineering: the game logic, the responsive architecture, and the 'world-coordinate' mathematics required for the drag-and-drop system. While the UI utilizes code-generated graphics to approximate the design rather than pixel-perfect image assets, the functionality works exactly as specified in the requirements document."
+};
+
+export const ASSIGNMENT_DETAILS = {
+  compliance: [
+    { label: "Framework", value: "Built using Phaser 3 (Vanilla JS, no external libraries)." },
+    { label: "Responsive Design", value: "Custom scaling engine to fit the 1440x1024 design space on mobile and desktop." },
+    { label: "Visual Layout", value: "Implemented the 'Cat Header', 'Turquoise Grid', and 'Orange Right Panel'." },
+    { label: "Game Logic", value: "Merge Rule, Divide Rule, Queue System, Keep Slot, and Trash with counters." }
+  ],
+  approach: [
+    { title: "Responsive Architecture", desc: "Used Phaser.Scale.RESIZE with a custom handleResize() function to switch between Landscape (Desktop) and Vertical Stack (Mobile) layouts." },
+    { title: "Container-Based UI", desc: "Grouped logical components (Grid, Sidebar, HUD) into Phaser Containers for organized scaling." },
+    { title: "World Coordinate Math", desc: "Implemented matrix transformation helpers to fix drag-and-drop issues between Local (Container) and World spaces." }
+  ],
+  future: [
+    "Undo System (Z key)",
+    "Hint Highlighting (Glow effects)",
+    "Audio Effects",
+    "High-fidelity Asset Swap"
+  ]
+};
 
 export const SKILLS: Skill[] = [
   { name: "React / JSX", level: 90, category: 'Frontend/Game', icon: "⚛️" },

@@ -63,10 +63,10 @@ const Contact: React.FC = () => {
 
         <div className="border-t border-white/10 pt-8 text-center">
           <p className="text-gray-600 text-sm font-space">
-            © {new Date().getFullYear()} {PERSONAL_INFO.name}. Built with React & Tailwind.
+            © {new Date().getFullYear()} {PERSONAL_INFO.name}. 
           </p>
           <p className="text-gray-700 text-xs mt-2">
-            Designed for Eklavya Application.
+            Designed for Eklavya Application and Assignment Submission.
           </p>
         </div>
       </div>
